@@ -1,8 +1,9 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Github, Linkedin, Mail, Download, ChevronDown } from 'lucide-react';
 import ProjectCard from './components/ProjectCard';
 import { TechStack } from './components/TechStack';
 import { projects } from './data/projects';
+import profileImage from './assets/ayan.jpg'; // Import the image
 
 function App() {
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -41,7 +42,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-6xl font-bold mb-6 heading-gradient">
-                Hey, I'm [Your Name] 👋
+                Hey, I'm Ayan Das 👋
               </h1>
               <p className="text-xl text-gray-400 mb-8 leading-relaxed">
                 A passionate software developer crafting elegant solutions through code. 
@@ -88,11 +89,11 @@ function App() {
             </div>
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-400 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
-              <div className="relative bg-gray-900 p-2 rounded-xl">
+              <div className="relative bg-gray-900 p-4 rounded-xl"> {/* Increased padding */}
                 <img 
-                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=800"
+                  src={profileImage} // Use the imported image
                   alt="Profile"
-                  className="rounded-lg w-full aspect-square object-cover"
+                  className="rounded-lg w-auto max-h-[300px] mx-auto object-contain" // Adjusted width and centered the image
                 />
               </div>
             </div>
