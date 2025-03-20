@@ -15,14 +15,14 @@ export const projects = [
     githubUrl: "https://github.com/SarcasticWala/Code_Sphere",
     liveUrl: "https://code-sphere-editor.vercel.app/"
   },
-  // {
-  //   title: "AI-Powered Analytics Dashboard",
-  //   description: "An advanced analytics dashboard utilizing machine learning algorithms to provide predictive insights and data visualization for business metrics.",
-  //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-  //   technologies: ["React", "Python", "TensorFlow", "D3.js", "FastAPI"],
-  //   githubUrl: "https://github.com/yourusername/analytics-dashboard",
-  //   liveUrl: "https://analytics-dashboard.example.com"
-  // },
+  {
+    title: "expense-tracker",
+    description: "An expense tracker app that allows users to track their income and expenses, visualize their spending habits, and set budgets.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    technologies: ["React", "Tailwind CSS", "LocalStorage"],
+    githubUrl: "https://github.com/SarcasticWala/Expense_Tracker",
+    liveUrl: "https://expense-tracker-uql7.onrender.com/"
+  },
   // {
   //   title: "Social Media Platform",
   //   description: "A modern social networking platform with features like real-time messaging, content sharing, and personalized feed algorithms.",

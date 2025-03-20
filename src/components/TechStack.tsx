@@ -1,6 +1,5 @@
 // import { useState } from 'react';
 import * as SiIcons from 'react-icons/si'; // Import Simple Icons from react-icons
-
 interface TechCategory {
   name: string;
   technologies: {
@@ -14,10 +13,9 @@ const techCategories: TechCategory[] = [
   {
     name: 'Frontend',
     technologies: [
-      { name: 'React', level: 'Expert', icon: 'SiReact' },
-      { name: 'TypeScript', level: 'Expert', icon: 'SiTypescript' },
-      { name: 'Next.js', level: 'Advanced', icon: 'SiNextdotjs' },
-      { name: 'Tailwind CSS', level: 'Expert', icon: 'SiTailwindcss' },
+      { name: 'React', level: 'Advanced', icon: 'SiReact' },
+      { name: 'TypeScript', level: 'Intermediate', icon: 'SiTypescript' },
+      { name: 'Tailwind CSS', level: 'Advanced', icon: 'SiTailwindcss' },
       { name: 'HTML5', level: 'Expert', icon: 'SiHtml5' },
       { name: 'JavaScript', level: 'Expert', icon: 'SiJavascript' },
     ]
@@ -26,22 +24,21 @@ const techCategories: TechCategory[] = [
     name: 'Backend',
     technologies: [
       { name: 'Node.js', level: 'Advanced', icon: 'SiNodedotjs' },
-      { name: 'Express', level: 'Advanced', icon: 'SiExpress' },
+      { name: 'Express', level: 'Intermediate', icon: 'SiExpress' },
       { name: 'MongoDB', level: 'Intermediate', icon: 'SiMongodb' },
-      { name: 'PostgreSQL', level: 'Advanced', icon: 'SiPostgresql' },
-      { name: 'GraphQL', level: 'Intermediate', icon: 'SiGraphql' },
-      { name: 'Redis', level: 'Intermediate', icon: 'SiRedis' },
+      { name: 'MySQL', level: 'Advanced', icon: 'SiMysql' }, // Fixed icon
+      { name: 'Firebase', level: 'Intermediate', icon: 'SiFirebase' },
     ]
   },
   {
     name: 'DevOps & Tools',
     technologies: [
       { name: 'Git', level: 'Expert', icon: 'SiGit' },
-      { name: 'Docker', level: 'Intermediate', icon: 'SiDocker' },
+      { name: 'Docker', level: 'Beginner', icon: 'SiDocker' },
       // { name: 'AWS', level: 'Intermediate', icon: 'SiAmazonaws' },
       { name: 'GitHub Actions', level: 'Advanced', icon: 'SiGithubactions' },
-      { name: 'Linux', level: 'Advanced', icon: 'SiLinux' },
-      { name: 'Webpack', level: 'Advanced', icon: 'SiWebpack' },
+      { name: 'Linux', level: 'Beginner', icon: 'SiLinux' },
+      // { name: 'VS Code', level: 'Expert', icon: 'SiVisualstudiocode' }, // Fixed icon
     ]
   }
 ];
@@ -57,22 +54,22 @@ export function TechStack() {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-12"> {/* Increased spacing between categories */}
       {techCategories.map((category) => (
-        <div key={category.name} className="space-y-4">
-          <h3 className="text-xl font-semibold text-gray-200">{category.name}</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div key={category.name} className="space-y-6"> {/* Adjusted spacing */}
+          <h3 className="text-xl font-semibold text-gray-200 text-center md:text-left">{category.name}</h3> {/* Centered on small screens */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"> {/* Improved grid responsiveness */}
             {category.technologies.map((tech) => {
               const Icon = SiIcons[tech.icon];
               return (
-                <div key={tech.name} className="tech-card group">
+                <div key={tech.name} className="tech-card group flex flex-col items-center text-center">
                   <div className="text-3xl text-gray-400 group-hover:text-blue-400 transition-colors">
                     {Icon ? <Icon /> : <span className="text-sm">Icon Not Found</span>}
                   </div>
-                  <span className="text-lg font-medium group-hover:text-blue-400 transition-colors">
+                  <span className="text-lg font-medium group-hover:text-blue-400 transition-colors mt-2">
                     {tech.name}
                   </span>
-                  <span className={`px-2 py-1 rounded-full text-xs ${getLevelColor(tech.level)}`}>
+                  <span className={`px-2 py-1 rounded-full text-xs mt-1 ${getLevelColor(tech.level)}`}>
                     {tech.level}
                   </span>
                 </div>
