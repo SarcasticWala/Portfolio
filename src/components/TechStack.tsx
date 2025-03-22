@@ -4,7 +4,7 @@ interface TechCategory {
   name: string;
   technologies: {
     name: string;
-    level: 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
+    // level: 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
     icon: keyof typeof SiIcons; // Use keyof typeof SiIcons for type safety
   }[];
 }
@@ -13,45 +13,45 @@ const techCategories: TechCategory[] = [
   {
     name: 'Frontend',
     technologies: [
-      { name: 'React', level: 'Advanced', icon: 'SiReact' },
-      { name: 'TypeScript', level: 'Intermediate', icon: 'SiTypescript' },
-      { name: 'Tailwind CSS', level: 'Advanced', icon: 'SiTailwindcss' },
-      { name: 'HTML5', level: 'Expert', icon: 'SiHtml5' },
-      { name: 'JavaScript', level: 'Expert', icon: 'SiJavascript' },
+      { name: 'React',  icon: 'SiReact' },
+      { name: 'TypeScript', icon: 'SiTypescript' },
+      { name: 'Tailwind CSS', icon: 'SiTailwindcss' },
+      { name: 'HTML5',  icon: 'SiHtml5' },
+      { name: 'JavaScript', icon: 'SiJavascript' },
     ]
   },
   {
     name: 'Backend',
     technologies: [
-      { name: 'Node.js', level: 'Advanced', icon: 'SiNodedotjs' },
-      { name: 'Express', level: 'Intermediate', icon: 'SiExpress' },
-      { name: 'MongoDB', level: 'Intermediate', icon: 'SiMongodb' },
-      { name: 'MySQL', level: 'Advanced', icon: 'SiMysql' }, // Fixed icon
-      { name: 'Firebase', level: 'Intermediate', icon: 'SiFirebase' },
+      { name: 'Node.js', icon: 'SiNodedotjs' },
+      { name: 'Express',  icon: 'SiExpress' },
+      { name: 'MongoDB',  icon: 'SiMongodb' },
+      { name: 'MySQL',  icon: 'SiMysql' }, // Fixed icon
+      { name: 'Firebase',  icon: 'SiFirebase' },
     ]
   },
   {
     name: 'DevOps & Tools',
     technologies: [
-      { name: 'Git', level: 'Expert', icon: 'SiGit' },
-      { name: 'Docker', level: 'Beginner', icon: 'SiDocker' },
+      { name: 'Git',  icon: 'SiGit' },
+      { name: 'Docker', icon: 'SiDocker' },
       // { name: 'AWS', level: 'Intermediate', icon: 'SiAmazonaws' },
-      { name: 'GitHub Actions', level: 'Advanced', icon: 'SiGithubactions' },
-      { name: 'Linux', level: 'Beginner', icon: 'SiLinux' },
+      { name: 'GitHub Actions',  icon: 'SiGithubactions' },
+      { name: 'Linux', icon: 'SiLinux' },
       // { name: 'VS Code', level: 'Expert', icon: 'SiVisualstudiocode' }, // Fixed icon
     ]
   }
 ];
 
 export function TechStack() {
-  const getLevelColor = (level: string) => {
-    switch (level) {
-      case 'Expert': return 'bg-green-500/20 text-green-400';
-      case 'Advanced': return 'bg-blue-500/20 text-blue-400';
-      case 'Intermediate': return 'bg-yellow-500/20 text-yellow-400';
-      default: return 'bg-gray-500/20 text-gray-400';
-    }
-  };
+  // const getLevelColor = (level: string) => {
+  //   switch (level) {
+  //     case 'Expert': return 'bg-green-500/20 text-green-400';
+  //     case 'Advanced': return 'bg-blue-500/20 text-blue-400';
+  //     case 'Intermediate': return 'bg-yellow-500/20 text-yellow-400';
+  //     default: return 'bg-gray-500/20 text-gray-400';
+  //   }
+  // };
 
   return (
     <div className="space-y-12"> {/* Increased spacing between categories */}
@@ -69,9 +69,7 @@ export function TechStack() {
                   <span className="text-lg font-medium group-hover:text-blue-400 transition-colors mt-2">
                     {tech.name}
                   </span>
-                  <span className={`px-2 py-1 rounded-full text-xs mt-1 ${getLevelColor(tech.level)}`}>
-                    {tech.level}
-                  </span>
+                 
                 </div>
               );
             })}
