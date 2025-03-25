@@ -114,7 +114,7 @@ function App() {
                   <Mail size={24} />
                 </a>
                 <a 
-                  href="https://drive.google.com/file/d/1-DGJHFt3M0P6c0KzI3ujN98p5kBju2NQ/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1GhB_sDlVpOjcZCHNGTkZC4AjbXopK9cq/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg hover:opacity-90 transition-opacity"
