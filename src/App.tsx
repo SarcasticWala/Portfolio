@@ -114,7 +114,7 @@ function App() {
                   <Mail size={24} />
                 </a>
                 <a 
-                  href="https://drive.google.com/file/d/1xNSWzPPJpW501oKIePx8IAAGAv7_l37F/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1GhB_sDlVpOjcZCHNGTkZC4AjbXopK9cq/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg hover:opacity-90 transition-opacity"
@@ -162,14 +162,14 @@ function App() {
                 delivers an exceptional user experience.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                  Based in <a 
-                    href={locationInfo} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:underline"
-                  >
-                    Jalpaiguri, West Bengal
-                  </a>, I enjoy working on projects that make a difference.
+                Based in <a 
+                  href={locationInfo} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Jalpaiguri, West Bengal
+                </a>, I enjoy working on projects that make a difference.
               </p>
             </div>
             <div 
