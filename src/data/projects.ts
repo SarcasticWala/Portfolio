@@ -31,8 +31,8 @@ export const projects = [
     {
     title: "TathaagatFoundation",
     description: "Tathaagat Foundation focuses on high-quality, low-cost and replicable interventions to strengthen rural livelihoods and build climate resilience at the village level.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["React", "Tailwind CSS", "LocalStorage"],
+    image: pic5,
+    technologies: ["React", "Tailwind CSS", "typeScript", "MongoDB", "Express.js", "Node.js"],
     githubUrl: "https://github.com/SarcasticWala/Expense_Tracker",
     liveUrl: "https://expense-tracker-uql7.onrender.com/"
   },
@@ -47,8 +47,8 @@ export const projects = [
   {
     title: "expense-tracker",
     description: "An expense tracker app that allows users to track their income and expenses, visualize their spending habits, and set budgets.",
-    image: pic5,
-    technologies: ["React", "Tailwind CSS", "typeScript", "MongoDB", "Express.js", "Node.js"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    technologies: ["React", "Tailwind CSS", ],
     githubUrl: "https://github.com/SarcasticWala/Tathaagat",
     liveUrl: "https://tathaagat.vercel.app/"
   },
