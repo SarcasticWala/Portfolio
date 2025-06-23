@@ -52,7 +52,5 @@ export const projects = [
     githubUrl: "https://github.com/SarcasticWala/Tathaagat",
     liveUrl: "https://tathaagat.vercel.app/"
   },
-
- 
  
 ];
