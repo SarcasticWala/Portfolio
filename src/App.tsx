@@ -56,20 +56,21 @@ function App() {
 
           {/* Mobile Menu with Animation */}
           <div
-            className={`md:hidden mt-4 overflow-hidden transition-all duration-300 ease-in-out ${
-              isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-            }`}
-          >
-            <a href="#about" className="block py-2 text-white hover:text-blue-400 transition-colors" onClick={toggleMobileMenu}>
-              About
-            </a>
-            <a href="#projects" className="block py-2 text-white hover:text-blue-400 transition-colors" onClick={toggleMobileMenu}>
-              Projects
-            </a>
-            <a href="#contact" className="block py-2 text-white hover:text-blue-400 transition-colors" onClick={toggleMobileMenu}>
-              Contact
-            </a>
-          </div>
+  className={`md:hidden mt-4 overflow-hidden transform transition-all duration-500 ease-in-out origin-top ${
+    isMobileMenuOpen ? 'max-h-96 opacity-100 scale-100' : 'max-h-0 opacity-0 scale-95'
+  }`}
+>
+  <a href="#about" className="block py-2 text-white hover:text-blue-400 transition-colors" onClick={toggleMobileMenu}>
+    About
+  </a>
+  <a href="#projects" className="block py-2 text-white hover:text-blue-400 transition-colors" onClick={toggleMobileMenu}>
+    Projects
+  </a>
+  <a href="#contact" className="block py-2 text-white hover:text-blue-400 transition-colors" onClick={toggleMobileMenu}>
+    Contact
+  </a>
+</div>
+
         </nav>
       </header>
 
@@ -275,13 +276,13 @@ function App() {
           <p className="text-gray-400">
             © {new Date().getFullYear()} Ayan Das. All rights reserved.
           </p>
-          <button 
+          {/* <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
             className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
             aria-label="Back to top"
           >
             Back to Top
-          </button>
+          </button> */}
         </div>
       </footer>
     </div>

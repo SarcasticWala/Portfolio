@@ -2,6 +2,7 @@ import pic from "../assets/image1.png";
 import pic2 from  "../assets/image2.png";
 import pic3 from  "../assets/imag3.png";
 import pic4 from  "../assets/image.png";
+import pic5 from  "../assets/pic5.png";
 export const projects = [
   {
     title: "Chat-A-Verse",
@@ -27,6 +28,14 @@ export const projects = [
     githubUrl: "https://github.com/SarcasticWala/Esperanza_2k25",
     liveUrl: "https://www.esperanza.org.in/"
   },
+    {
+    title: "TathaagatFoundation",
+    description: "Tathaagat Foundation focuses on high-quality, low-cost and replicable interventions to strengthen rural livelihoods and build climate resilience at the village level.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    technologies: ["React", "Tailwind CSS", "LocalStorage"],
+    githubUrl: "https://github.com/SarcasticWala/Expense_Tracker",
+    liveUrl: "https://expense-tracker-uql7.onrender.com/"
+  },
   {
     title: "Your_Games",
     description: "A platform for gamers to connect, share, and discover new games. Users can create profiles, post reviews, and join gaming communities.",
@@ -38,10 +47,12 @@ export const projects = [
   {
     title: "expense-tracker",
     description: "An expense tracker app that allows users to track their income and expenses, visualize their spending habits, and set budgets.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    technologies: ["React", "Tailwind CSS", "LocalStorage"],
-    githubUrl: "https://github.com/SarcasticWala/Expense_Tracker",
-    liveUrl: "https://expense-tracker-uql7.onrender.com/"
+    image: pic5,
+    technologies: ["React", "Tailwind CSS", "typeScript", "MongoDB", "Express.js", "Node.js"],
+    githubUrl: "https://github.com/SarcasticWala/Tathaagat",
+    liveUrl: "https://tathaagat.vercel.app/"
   },
+
+ 
  
 ];
